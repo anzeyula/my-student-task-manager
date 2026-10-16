@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>My Student Task Manager</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>My Study Planner</h1>
+            <p>Plan your day. Finish your goals.</p>
+        </header>
+        <main>
+            <section class="summary"
+            <div class="stat">
+                <h2 id="totalTasks">0</h2>
+                <p>totalTasks</p>
+            </div>
+            <div class="stat">
+                <h2 id="pending Tasks">0</h2>
+                <p>Pending</p>
+
+            </div>
+        </section>
+        <section class="panel"
+        <h2>Add a Task</h2>
+
+        <form id="taskForm">
+            <label for="taskName">Task Name</label>
+            <input id="task Name" type"text"
+            placeholder="e.g Revise Computer Technology"required>
+
+            <label for="taskDate">Due date</label>
+            <input id="taskDate"type="date"required>
+
+            <label for="taskPriority">Priority</label>
+            <select id="taskPriority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button type="submit">+ Add Task</button>
+        </form>
+        </section>
+
+        <section class="panel"
+        <h2>My Tasks</h2>
+        <div id="taskList">
+            <p id="emptyMessage">No task yet. Add your first task!</p>
+
+        </div>
+        </section>
+        </main> 
+        <footer>
+            <p>My Study Planner | Learn. Plan. Succeed.</p>
+        </footer>
+    </body>
+ </html>
